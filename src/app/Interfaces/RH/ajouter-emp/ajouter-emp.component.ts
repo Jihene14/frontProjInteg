@@ -39,7 +39,8 @@ export class AjouterEmpComponent {
       poste: [''],
       email:[''],
       adresse: [''],
-      departement:['']
+      departement:[''],
+      role:['']
     });
     
   }

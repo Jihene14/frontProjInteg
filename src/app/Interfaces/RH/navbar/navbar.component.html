@@ -6,7 +6,12 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
-
+    <div>
+        <p class="NomUser">
+          <img src="assets/profil.png" class="imgUser" />
+          {{ employe.nom }} {{ employe.prenom }}
+        </p>
+      </div>
 
 </nav>
 <div class="container-fluid ">
@@ -16,14 +21,14 @@
                 <ul class="nav flex-column">
                     <li class="nav-item"
                         style="padding: 10px;margin: 20px;border-style: none;width: 80%;text-align: center;">
-                        <div>
-                            <a class="nav-link active" aria-current="page" href="#">
+                        <div (click)="naHomeRh()">
+                            <a class="nav-link active" aria-current="page" >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
                                     class="bi bi-grid-fill" viewBox="0 0 16 16">
                                     <path
                                         d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" />
                                 </svg>
-                                <span class="ml-2 titleNav" routerLink="homeRh">Home</span>
+                                <span class="ml-2 titleNav" >Home</span>
                             </a>
                         </div>
                     </li>
